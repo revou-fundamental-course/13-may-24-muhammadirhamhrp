@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>My Calculator</h1>
+        <section>
+            <p id="hi">
+                Hai teman - teman, selamat datang di kalkulator saya
+            </p>
+        </section>
+    </header>
+
+    <section id="section-content">
+        <div class="section-content">
+            <h3>Segitiga</h3>
+        </div>
+
+        <button type="button" id="switch-keliling"><u>Switch ke Hitung Keliling Segitiga</u></button>
+    </section>
+    
+    <section id="section-luas">
+        <div class="section-luas">
+            <h2>Luas Segitiga</h2>
+        </div>
+        <div class="formula-img">
+            <img src="https://aura-ilmu.com/global/wp-content/uploads/sites/2/2020/11/segitiga-300x210.jpg.webp"> 
+        </div>  
+
+        <p class="rumus">Rumus: <br>Luas = 1/2 x Alas x Tinggi</p>
+    </section>
+
+    <section id="form-container-luas" class="form-container">
+        <header>
+            <h2>Hitung Luas Segitiga</h2>
+        </header>
+
+        <form>
+            <p>Diketahui :</p>
+            <section>
+                <div>
+                    <label>Alas:</label><input id="alas"/>
+                </div>
+
+                <div>
+                    <label>Tinggi:</label><input id="tinggi"/>
+                </div>
+            </section>
+
+            <button type="button" id="hitung-segitiga">Hitung</button>
+            <button type="button" id="reset-btn">Reset</button>
+        </form>
+        <p id="luas-result"></p>
+    </section>
+    
+    <hr/>
+    
+    <div class="spacer"></div> 
+    
+    <section id="section-keliling">
+        <div class="section-luas">
+            <h2>Keliling Segitiga</h2>
+        </div>
+        <div class="formula-img">
+            <img src="https://aura-ilmu.com/global/wp-content/uploads/sites/2/2020/11/segitiga-300x210.jpg.webp"> 
+        </div>  
+
+        <p class="rumus">Rumus: <br>Keliling = Sisi A + Sisi B + Sisi C</p>
+    </section>
+
+    <br>
+    
+    <section id="form-container-keliling" class="form-container">
+        <header>
+            <h2>Hitung Keliling Segitiga</h2>
+        </header>
+
+        <form>
+            <p>Diketahui :</p>
+            <section>
+                <div>
+                    <label>Sisi A:</label><input id="sisiA"/>
+                </div>
+
+                <div>
+                    <label>Sisi B:</label><input id="sisiB"/>
+                </div>
+
+                <div>
+                    <label>Sisi C:</label><input id="sisiC"/>
+                </div>
+            </section>
+
+            <button type="button" id="keliling-segitiga">Hitung</button>
+            <button type="button" id="reset-keliling">Reset</button>
+        </form>
+        <p id="keliling-result"></p>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
