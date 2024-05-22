@@ -1,4 +1,5 @@
 /* Ini CSS */
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f2f5;
@@ -25,7 +26,6 @@ header {
     font-size: 1.2em;
     margin-top: 10px;
 }
-
 
 .section-content, .section-luas {
     background-color: #2196F3;
@@ -182,3 +182,47 @@ form h2 {
     margin-bottom: 40px; 
 }
 
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    form div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    label, input {
+        width: 100%;
+    }
+
+    label {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2, h3 {
+        font-size: 1.5em;
+    }
+
+    .section-content > h3 {
+        font-size: 1.2em;
+    }
+
+    .rumus {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    img {
+        height: 100px;
+    }
+}
